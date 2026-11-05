@@ -1,0 +1,22 @@
+/* Flexbox: useful for arranging items in one direction */
+.navigation-example {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Grid: useful for arranging cards in rows and columns */
+.gallery-example {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* Smaller screens */
+@media (max-width: 700px) {
+  .gallery-example {
+    grid-template-columns: 1fr;
+  }
+}
